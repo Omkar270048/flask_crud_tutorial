@@ -56,4 +56,13 @@ db.session.commit()
 ## Break-down of code: Todo.query.filter_by(key=value).first()
 * `Todo` : is name of the class. <br>
 * `query.filter_by(key=value)` : is used to get values matching the condition (key=value). <br>
-* `first()` : return the first row with matching (key=value).
+* `first()` : return the first row with matching (key=value). <br> <br>
+
+
+## Reference
+YouTube ( code with harry) - https://www.youtube.com/watch?v=oA8brF3w5XQ&t=4232s <br>
+SQL-Alchemy - https://flask-sqlalchemy.readthedocs.io/en/stable/quickstart/ <br>
+Flask - https://flask.palletsprojects.com/en/stable/quickstart/ <br>
+GeeksforGeeks - https://www.geeksforgeeks.org/flask-tutorial/ <br>
+
+
