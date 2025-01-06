@@ -15,12 +15,20 @@ db = SQLAlchemy(app)
 ```
 
 ## Creating simple TODOs class
+
+* `db.Column()` : It is used to create column
+* `db.Integer` : Setting column as Integer Type
+* `db.String(size)` : Setting column as String Type
+* `db.DateTime` : Setting column as Datetime Type
+* `default` : It is used to set default value
+* `primary_key=True` : Setting the column as primary key
+
 ```py
 class Todo(db.Model):
     sno = db.Column(db.Integer,primary_key=True)
     title = db.Column(db.String(200), nullable=False)
     desc = db.Column(db.String(500), nullable=False)
-    date_created = db.Column(db.DateTime, default=datetime.now())
+    date_created = db.Column(db.DateTime, default=datetime.now())  # you need to import datetime module
 
     def __repr__(self) -> str:
         return f"{self.sno} - {self.title}"
