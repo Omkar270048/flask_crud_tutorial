@@ -2,7 +2,7 @@
 
 This repository is for flask TODOs APP. Here (readme.md) is only reference piece of code. To get Full code download the project
 
-## Database set up (I am using flask-sqlalchemy)
+## Database setup (I am using flask-sqlalchemy)
 ```
 pip install flask
 pip install flask-sqlalchemy
